@@ -1,0 +1,246 @@
+/*####### Defaults #######*/
+
+html {
+    background-color: #fff;
+}
+
+body {
+    font-family: arial, sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+
+nav {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    color: #202124;
+    overflow: hidden;
+}
+
+footer {
+    color: #202124;
+    background-color: #f2f2f2;
+    width: 100%;
+    line-height: 1;
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 15px;
+    font-family: arial, sans-serif;
+    color: #202124;
+    background-color: #f8f9fa;
+    border-style: none;
+}
+
+
+.col-1 {width:8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+/*###### Navbar ######*/
+
+
+nav ul.topnav {
+    display: block;
+}
+
+ul.topnav li {
+    float: right;
+    list-style: none;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 20px;
+    padding: 11px;
+    text-align: center;
+    color: #202124;
+}
+
+ul.topnav li.accountImage img {
+    border-radius: 50px;
+    margin-top: -10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.topnav li.unicode img {
+    box-sizing: border-box;
+    margin-top: -1px;
+    padding: 0;
+}
+
+/*###### Custom Designs ######*/
+
+div.row {
+    display: flex;
+    width: 100%;
+}
+
+.row:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.dropdownIcon {
+    display: none;
+}
+
+div.GoogleIcon {
+    width: 100%;
+    display: block;
+    padding: 40px 0;
+}
+
+div.GoogleIcon img {
+    display: block;
+    margin: auto;
+}
+
+.searchField .inputbox {
+    display: flex;
+    margin: auto;
+    border-radius: 30px;
+    border-color: rgba(0,0,0,.1);
+    font-size: 20px;
+    padding: 10px;
+    width: 44%;
+    /*opacity: .2;*/
+    color: #202124;
+    word-wrap: break-word;
+}
+
+[input type="text"] {
+    color: black;
+} 
+
+div.buttons {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+}
+
+
+div.buttons button.search, button.lucky {
+    text-align: center;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div.buttons button:hover {
+    box-shadow: 0 0 1px 1px rgba(0,0,0,10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+div.endText {
+    display: block;
+    text-align: center;
+}
+
+div.endText a {
+    text-decoration: none;
+    padding: 3px;
+    font-size: small;
+}
+
+footer ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+footer div.prefoot {
+    padding: 0 50px;
+    border-bottom: 1px solid white;
+}
+
+footer .foot {
+    padding-top: 10px;
+}
+
+footer ul.left {
+    display: block;
+    text-align: left;
+    margin: auto;
+}
+
+footer ul.left li {
+    float: left;
+    padding: 0 10px;
+}
+
+footer p.carbonText {
+    text-align: center;
+    margin: auto;
+}
+
+footer ul.right {
+    display: block;
+    text-align: right;
+    margin: auto;
+}
+
+footer ul.right li {
+    float: right;
+    padding: 0 10px; 
+}
+
+
+
+
+/*##### Mobile ######*/
+
+@media screen and (max-width:1000px) {
+    
+    nav {
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    nav ul.topnav li {
+        text-transform: uppercase;
+    }
+
+    nav ul.topnav li.Gmail
+     {
+        display: none;
+    }
+    
+    nav ul.topnav li.dropdownIcon,
+    nav ul.topnav li.all,
+    nav ul.topnav li.images {
+        display: block;
+        float: left;
+        position: relative;
+    }
+    
+    nav ul.topnav {
+        padding-left: 0
+    }
+    
+
+}
